@@ -1,0 +1,61 @@
+Aplicando lo aprendido 0
+
+Ejercicio 1
+
+1)¡cuales son las reglas escritas del lenguaje?
+
+las reglas escritas en C se rigen por su sintaxis estricta y las convenciones de estilos para garantizar la legibilidad y la correcta compilación.
+
+	sintaxis y reglas fundamentales
+-palabras reservadas: términos claves como int, void, if, for, while, etc. no pueden usarse como nombres de variables.
+
+-final de sentencia: cada instrucción ejecutable debe terminar con un punto y coma (;).
+
+-bloque de código: los conjuntos de instrucciones se delimitan mediante llaves { y } .
+
+-comentarios: se utilizan /* */ para bloques o // para una sola linea.
+
+	Convenciones de estilos recomendadas.
+-nomenclatura: se acostumbra usar minusculas para variables y funciones y MAYUSCULAS para constantes y macros.
+
+-indentacion: el codgio debe estar sangrado para reflejar claramente la estrucutra logica y los bloques anidados.
+
+-claridad: se recomienda escribir una declaracion por linea y usar nombres descriptivos para las variables.
+
+-caracteres: no se deben usar caracteres especiales locales como ñ o acentos.
+
+2)¿Qué características particulares del lenguaje se
+cree que sean "mejores" que en otros lenguajes?
+
+Las caracteristicas de C que se consideran mejores en comparacion a otros lenguajes modernos radican principalmente en su eficiencia bruta, el control absoluto dobre el hardware y su previsibilidad.
+
+	eficiencia y rendimiento superiro:
+-compilacion directa: a diferencia de leguajes interpretados como python o los que usan maquinas virtuales como java, el codigo C se compiña directamente a codigo maquina nativo. esto elimina la sobrecarga de interpretes o tiempos de ejecucion (runtime) pesados.
+
+-optimizacion del compilador: debido a su larga trayecotria (mas de 50 años), a alcanzado un nivel de optimizacion la cual aprovecha al maximo la arquitectura del procesador.
+
+	control de memoria y hardware.
+-gestion manual de memoria: el desarrolador decide exactamente cuando reservar (malloc) y liberar (free) memoria. esto permite optimizaciones finas y un uso de recursos minimo.
+
+-aritmetica de punteros: permite manipular direcciones de memoria directamente.
+
+-cercania al metal: permite interactuar con registros de hardware, interrupciones y memoria mapeada con muy pocas capas de abstracion, siendo el estándar para el desarrollo de sistemas operativos, drivers y firmware.
+
+	portabilidad y minimalismo.
+- portabilidad extrema: un programa escrito en C estándar puede compilarse en casi cualquier arquitectura, con cambios minimos o nulos en el código fuente.
+
+-sintaxis compacta: posee un numero reducido de palabras claves y una sintaxis minimalista.
+
+3)¿Qué pensamiento o estilo de programación consideraron mejor los creadores?
+
+los cradores del lenguaje C, Dennis Ritchie y Ken Thompson, priorizaron un estilo de programación que equilibrara la eficiencia operativa con la portabilidad del código, para lograr esto adoptarion los siguientes principios:
+
+-programación estructurada: introdujeron el uso de subrutinas, estructuras condicionales (if, while) y bucles (for, while).
+
+-control de bajo nivel: la capacidad de manipular directamente la memoria y los recursos del hardware.
+
+-simplicidad y eficiencia: diseñaron el lenguaje para que generara código rápido y compacto, utilizando una sintaxis concisa y tipos de datos básicos directamente manejables por el hardware.
+
+4) ¿Qué clase de problemas pueden resolverse más fácilmente en el lenguaje?
+
+los problemas que se pueden resolver mas fácilmente en C son aquellos donde necesitas control directo sobre la memoria y el hardware.

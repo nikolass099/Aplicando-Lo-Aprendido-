@@ -1,0 +1,12 @@
+{
+  "name": "apa-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node calculadora.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

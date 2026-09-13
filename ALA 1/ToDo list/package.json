@@ -1,0 +1,13 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ToDo-list.js",
+  "scripts": {
+    "test": "node ToDo-list.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

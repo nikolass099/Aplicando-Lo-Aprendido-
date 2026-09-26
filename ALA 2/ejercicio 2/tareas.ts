@@ -9,6 +9,20 @@ export interface Tarea {
     dificultad: "facil" | "medio" | "dificil";
 }
 
+export function pedirDificultad(): Tarea["dificultad"] {
+    while (true) {
+        const entrada = prompt("Elija una dificultad (facil, medio, dificil): ")
+            .trim()
+            .toLowerCase();
+
+        if (entrada === "facil" || entrada === "medio" || entrada === "dificil") {
+            return entrada;
+        }
+
+        console.log("Opcion invalida. Escriba facil, medio o dificil.");
+    }
+}
+
 export function agregarTarea(tareas: Tarea[]): void {
     const titulo = prompt("Nombre de la tarea: ").trim();
     if (!titulo) {
@@ -17,16 +31,7 @@ export function agregarTarea(tareas: Tarea[]): void {
     }
 
     const descripcion = prompt("Escriba su descripcion: ").trim();
-    const dificultadInput = prompt("Elija una dificultad (facil, medio, dificil): ")
-        .trim()
-        .toLowerCase();
-
-    const dificultad: Tarea[] =
-        dificultadInput === "facil" ||
-        dificultadInput === "medio" ||
-        dificultadInput === "dificil"
-            ? dificultadInput
-            : "medio";
+    const dificultad = pedirDificultad();
 
     tareas.push({ titulo, descripcion, completado: false, dificultad });
     console.log("Tarea guardada con exito.");

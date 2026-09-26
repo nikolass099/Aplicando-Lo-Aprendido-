@@ -1,4 +1,4 @@
-import { prompt } from "./tareas.js";
+import { pedirDificultad, prompt } from "./tareas.js";
 import type { Tarea } from "./tareas.js";
 
 export function verTareas(tareas: Tarea[]): void {
@@ -45,15 +45,7 @@ export function cambiarDificultad(tareas: Tarea[]): void {
         return;
     }
 
-    const nueva = prompt("Elija la nueva dificultad (facil, medio, dificil): ")
-        .trim()
-        .toLowerCase();
-    if (nueva !== "facil" && nueva !== "medio" && nueva !== "dificil") {
-        console.log("Valor invalido.");
-        return;
-    }
-
-    tareas[indice].dificultad = nueva;
+    tareas[indice].dificultad = pedirDificultad();
     console.log("Dificultad actualizada.");
 }
 

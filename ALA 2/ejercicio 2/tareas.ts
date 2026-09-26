@@ -21,7 +21,7 @@ export function agregarTarea(tareas: Tarea[]): void {
         .trim()
         .toLowerCase();
 
-    const dificultad: Tarea["dificultad"] =
+    const dificultad: Tarea[] =
         dificultadInput === "facil" ||
         dificultadInput === "medio" ||
         dificultadInput === "dificil"

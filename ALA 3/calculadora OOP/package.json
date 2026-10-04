@@ -1,0 +1,12 @@
+{
+  "name": "OOP-calculadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculadora.js",
+  "scripts": {
+    "test": "node calculadora.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
